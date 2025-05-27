@@ -1,0 +1,81 @@
+[
+    {
+        "title": "Streets of Rage 2",
+        "console": ["Megadrive", "Game Gear", "Nintendo 3DS"],
+        "genre": ["Beat them all"],
+        "year": 1992,
+        "cover": "assets/images/Streets-of-Rage-II.jpg"
+    },
+
+    {
+        "title": "Super Mario Bros",
+        "console": ["NES", "Gameboy Color", "Gameboy Advance", "Wii", "Nintendo 3DS"],
+        "genre": ["Plates-formes"],
+        "year": 1985,
+        "cover": "assets/images/Super-Mario-Bros.jpg"
+    },
+
+    {
+        "title": "Metroid",
+        "console": ["NES", "Gameboy Advance", "Wii", "Nintendo 3DS"],
+        "genre": ["Action-Aventure"],
+        "year": 1986,
+        "cover": "assets/images/Metroid.jpg"
+    },
+
+    {
+        "title": "Castlevania",
+        "console": ["NES", "Amiga", "Gameboy Advance"],
+        "genre": ["Action", "plates-formes"],
+        "year": 1986,
+        "cover": "assets/images/Castlevania.jpg"
+    },
+
+    {
+        "title": "Final Fantasy VII",
+        "console": ["Playstation 1"],
+        "genre": ["RPG"],
+        "year": 1997,
+        "cover": "assets/images/FF7.jpg"
+    },
+
+    {
+        "title": "Crash Bandicoot",
+        "console": ["Playstation 1"],
+        "genre": ["Plates-formes"],
+        "year": 1996,
+        "cover": "assets/images/Crash-Bandicoot.png"
+    },
+
+    {
+        "title": "Jak and Daxter: The Precursor Legacy",
+        "console": ["Playstation 2"],
+        "genre": ["Plates-formes", "aventure"],
+        "year": 2001,
+        "cover": "assets/images/Jak-and-Daxter.png"
+    },
+
+    {
+        "title": "Yakuza",
+        "console": ["Playstation 2"],
+        "genre": ["Action-Aventure", "RPG"],
+        "year": 2005,
+        "cover": "assets/images/Yakuza.jpg"
+    },
+
+    {
+        "title": "Tintin au Tibet",
+        "console": ["Super Nintendo", "Megadrive", "Game Gear", "Gameboy Color"],
+        "genre": ["Plates-formes", "aventure"],
+        "year": 1995,
+        "cover": "assets/images/Tintin-au-Tibet.jpg"
+    },
+
+    {
+        "title": "Street Fighter II: The World Warrior",
+        "console": ["Arcade", "Super Nintendo", "Gameboy"],
+        "genre": ["Combat"],
+        "year": 1991,
+        "cover": "assets/images/Street-Fighter-II.jpg"
+    }
+]
