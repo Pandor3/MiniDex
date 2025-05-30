@@ -1,0 +1,77 @@
+/* Importation de la police d'écriture rétro et ajout d'un fond noir */
+body {
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(90deg, #3a337a 0%, #577ec7 50%, #d853ed 100%);
+  color: #f5e9d3;
+  margin: 0;
+  padding: 2em;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+header h1 {
+    color: #ff914d;
+    font-size: 2rem;
+    text-shadow: 2px 2px #3a337a;
+}
+
+/* Il s'agit de la gallerie de jeux */
+#game-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.game-card {
+    background-color: #f5e9d3;
+    border: 2px solid #3a337a;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #d853ed;
+    padding: 1em;
+    max-width: 280px;
+    width: 100%;
+    text-align: center;
+    color: #1a1a1a;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card h2 {
+    font-size: 1.3em;
+    color: transparent;
+    -webkit-text-stroke: .3px #1a1a1a;
+    margin-top: 0.5em;
+    background: linear-gradient(to right, #ff914d 0%, #ff914d 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: background-size 0.2s ease-in-out;
+}
+
+.game-card p {
+    font-size: 0.75rem;
+    margin: 0.3em 0;
+}
+
+.game-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px #ff914d;
+    border-radius: 10px;
+}
+
+.game-card:hover h2 {
+    background-size: 100% 100%;
+}
