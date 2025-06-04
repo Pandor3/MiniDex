@@ -10,7 +10,7 @@
     {
         "title": "Super Mario Bros",
         "console": ["NES", "Gameboy Color", "Gameboy Advance", "Wii", "Nintendo 3DS"],
-        "genre": ["Plates-formes"],
+        "genre": ["Plates-Formes"],
         "year": 1985,
         "cover": "assets/images/Super-Mario-Bros.jpg"
     },
@@ -26,7 +26,7 @@
     {
         "title": "Castlevania",
         "console": ["NES", "Amiga", "Gameboy Advance"],
-        "genre": ["Action", "plates-formes"],
+        "genre": ["Action", "Plates-Formes"],
         "year": 1986,
         "cover": "assets/images/Castlevania.jpg"
     },
@@ -42,7 +42,7 @@
     {
         "title": "Crash Bandicoot",
         "console": ["Playstation 1"],
-        "genre": ["Plates-formes"],
+        "genre": ["Plates-Formes"],
         "year": 1996,
         "cover": "assets/images/Crash-Bandicoot.png"
     },
@@ -50,7 +50,7 @@
     {
         "title": "Jak and Daxter: The Precursor Legacy",
         "console": ["Playstation 2"],
-        "genre": ["Plates-formes", "aventure"],
+        "genre": ["Plates-Formes", "Aventure"],
         "year": 2001,
         "cover": "assets/images/Jak-and-Daxter.png"
     },
@@ -66,7 +66,7 @@
     {
         "title": "Tintin au Tibet",
         "console": ["Super Nintendo", "Megadrive", "Game Gear", "Gameboy Color"],
-        "genre": ["Plates-formes", "aventure"],
+        "genre": ["Plates-Formes", "Aventure"],
         "year": 1995,
         "cover": "assets/images/Tintin-au-Tibet.jpg"
     },
