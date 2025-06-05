@@ -18,6 +18,16 @@ fetch('./data/games.json')
             });
         });
 
+        /* Ceci permet de classer les genres dans un tableau en lisant les cartes de jeu */
+        let uniqueGenres = [];
+        data.forEach(game => {
+            game.genre.forEach(genreName => {
+                if (!uniqueGenres.includes(genreName)) {
+                    uniqueGenres.push(genreName);
+                }
+            });
+        });
+
         /* Ceci permet de mettre les consoles dans le système de filtrage */
         const selectElement = document.getElementById('consoles-select');
         uniqueConsoles.forEach(consoleName => {
@@ -27,10 +37,18 @@ fetch('./data/games.json')
             selectElement.appendChild(option);
         });
 
+        /* Ceci permet de mettre les genres dans le système de filtrage */
+        const selectGenre = document.getElementById('genres-select');
+        uniqueGenres.forEach(genreName => {
+            const option = document.createElement('option');
+            option.textContent = genreName;
+            option.value = genreName;
+            selectGenre.appendChild(option);
+        });
         
         const gallery = document.getElementById('game-gallery');
         
-        /* Création des cartes de jeux dynamiquement */
+        /* Ceci permet la création des cartes de jeux dynamiquement */
         function showGames(list) {
             list.forEach(game => {
                 const card = document.createElement('div');
@@ -60,17 +78,24 @@ fetch('./data/games.json')
                 gallery.appendChild(card);
         });
     }
-    /* Système de filtrage par consoles */
-    showGames(data);
-    selectElement.addEventListener('change', event => {
-        const selectedConsole = event.target.value;
-        gallery.innerHTML = "";
 
-        if (selectedConsole === "all") {
-            showGames(data);
-        } else {
-            const gamesFilter = data.filter(game => game.console.includes(selectedConsole));
-            showGames(gamesFilter);
+    /* Ceci est une fonction permettant de filtrer les jeux et les genres */
+    function filterGames() {
+            const selectedConsole = selectElement.value;
+            const selectedGenre = selectGenre.value;
+
+            const filteredGames = data.filter(game => {
+                const matchConsole = (selectedConsole === "all") || game.console.includes(selectedConsole);
+                const matchGenre = (selectedGenre === "all") || game.genre.includes(selectedGenre);
+                return matchConsole && matchGenre;
+            });
+
+            gallery.innerHTML = "";
+            showGames(filteredGames);
         }
-    });
+    
+        /* Ceci sont deux listeners qui permettent de changer la page en fonction des filtres choisis */
+    selectElement.addEventListener('change', filterGames);
+    selectGenre.addEventListener('change', filterGames);
+    showGames(data);
 });
