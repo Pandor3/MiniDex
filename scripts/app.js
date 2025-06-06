@@ -54,10 +54,11 @@ fetch('./data/games.json')
                 const card = document.createElement('div');
                 card.classList.add('game-card');
 
-                const img = document.createElement('img');
-                img.setAttribute('src', game.cover);
-                img.setAttribute('alt', game.title);
+                const img = document.createElement("img");
+                img.src = game.cover || "./assets/img/placeholder.jpg";
+                img.alt = `Jaquette de ${game.title}`;
                 card.appendChild(img);
+
 
                 const title = document.createElement('h2');
                 title.textContent = game.title;
