@@ -18,6 +18,9 @@ fetch('./data/games.json')
             });
         });
 
+        /* Ceci permet de filtrer les...Filtres des consoles générés dynamiquement */
+        uniqueConsoles.sort()
+
         /* Ceci permet de classer les genres dans un tableau en lisant les cartes de jeu */
         let uniqueGenres = [];
         data.forEach(game => {
@@ -27,6 +30,9 @@ fetch('./data/games.json')
                 }
             });
         });
+
+        /* Ceci permet de filtrer les filtres des genres générés dynamiquement */
+        uniqueGenres.sort();
 
         /* Ceci permet de mettre les consoles dans le système de filtrage */
         const selectElement = document.getElementById('consoles-select');
